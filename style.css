@@ -1,0 +1,291 @@
+/* Add styles for the portfolio navbar */
+.portfolio-navbar {
+    background-color: #f17b37;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio-navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.portfolio-navbar .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.portfolio-navbar ul li {
+    margin: 0;
+}
+
+.portfolio-navbar ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-navbar ul li a:hover {
+    background-color: #fc5a1a;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; 
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    a {
+        font-size: 14px;
+    }
+}
+
+.orange-color{
+    color: orange;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+}
+.felixable-container{
+    display: flex;
+    margin-bottom: 150px;
+}
+.half-width{
+    width: 50%;
+    padding-left: 5%;
+}
+.half-width img{
+    width: 85%;
+}
+.link-button{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+   background-image:linear-gradient(orangered,tomato);
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.link-button:hover{
+    background:red;
+    color:yellow;
+   
+
+}
+.Top-banner{
+    background-image: url(top-banner.png);
+    background-repeat: no-repeat;
+}
+
+.intro-down-arrow {
+    margin-top: 80px;
+}
+
+.intro-down-arrow img {
+    height: 20px;
+    width: 20px;
+}
+
+.intro-down-arrow {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Dream-Big{
+    background-color: #f3f3f2;
+    background-image: url(dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.center-text{
+    text-align: center;
+}
+.exp-module{
+    background-image: url(exp-bg.png);
+    background-repeat: no-repeat;
+}
+.exp-item{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px gray;
+    
+}
+
+#programmer-xp{
+    border-left: 7px solid;
+    border-image: linear-gradient(orangered,tomato);
+    border-image-slice: 1;
+}
+#programmer-xp:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+#web-xp{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue,cyan);
+    border-image-slice: 1; 
+}
+#web-xp:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+/* Projects */
+
+
+.Projects {
+    background-color: #f3f3f2; 
+    padding: 40px 0; 
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+
+
+section.Contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1.center-text {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/*menu button  */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .portfolio-navbar ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobile-menu li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+}
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="tittle.jpg">
+
+    <title>Nuren's Portfolio Site</title>
+</head>
+
+<body>
+    <header>
+        <nav class="portfolio-navbar">
+            <button class="menu-toggle" id="mobile-menu-toggle">&#9776; Menu</button>
+            <div class="logo">SRS</div>
+            <div class="mobile-menu" id="mobile-menu">  <!--add menu button -->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" id="contact-link">Contact</a></li> <!-- contact change-->
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!--Home-->
+    <section class="Top-banner felixable-container">
+        <div class="half-width">
+            <h1>Welcome to</h1>
+            <h1><span class="orange-color">Shamsur Rahman's</span> World!!</h1>
+            <h2><u> Web Developer | Content Creator </u></h2>
+            <p>Hello, This is MD.Shamsur Rahman Shishir. This is my portfolio website. I am an Electrical and Electronic Engineer and
+                Professional Full Stack Web Developer. Currently, available for freelance works. Hope you will like my portfolio website.
+            </p>
+            <a class="link-button" target="_blank" href=" ">HIRE ME</a>
+        </div>
+        <div class="half-width">
+            <img src="1708963001985.jpg" alt="" class="resized-image">
+        </div>
+        
+    </section>
+
+    <div class="intro-down-arrow"> 
+        <a href="#about" title="about"> 
+        <img src="down-arrow.png"></a>
+    </div>
+
+<!--About-->
+
+    <section class="Dream-Big felixable-container" id="about">
+        <div class="half-width">
+            <img src="1708963119937.jpg" alt="" width="300" height="400">
+        </div>
+        <div class="half-width">
+            <h1>Dream Big!</h1>
+            <h2><u>Stay Hungry, Stay Foolish</u></h2>
+            <p>I have always dreamt to become a Software Engineer.
+                Everyday, I am trying to learn something new and interesting about the tech world. I have
+                always followed the saying by Steve Jobs that "Stay Hungry, Stay Foolish". It made me more passionate to
+                chase my dream.</p>
+            <a class="link-button" target="_blank" href=" ">DOWNLOAD
+                RESUME</a>
+        </div>
+    </section>
+
+    <!--Experience-->
+    <section class="exp-module" id="experience">
+        <h1 class="center-text"><u>Experiences</u></h1>
+        <div class="felixable-container">
+            <div id="programmer-xp" class="exp-item">
+                <h2>Programming Languages</h2>
+                <h3 class="orange-color">2018-Present | Pro Level Coder</h3>
+                <p>I can code in three different programming languages. Efficient at JAVA and Python and at the learning
+                    stage
+                    of JavaScript. Familiar with Data Structures and Algorithm. Know Some of the frameworks like Django, MongoDB
+                    etc
+                    with fair enough problem-solving skills.</p>
+            </div>
+            <div id="web-xp" class="exp-item">
+                <h2>Web Development</h2>
+                <h3 class="orange-color">2021-Present | Pro Level Web Developer</h3>
+                <p>I can make client-ready responsive websites. I can create or add different categories on websites as
+                    per
+                    clients' demands such as E-commerce, transaction section, etc. Currently, I am available for freelance
+                    works. So, feel free to knock on the already provided links.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects-->
+
+    <section class="Projects" id="projects">
+        <h1 class="center-text"><u>Projects</u></h1>
+        <div class="project-cards">
+            <!-- Example card, repeat for additional cards -->
+            <div class="project-card">
+                <h2>Project 1</h2>
+                <p>Description of Project 1.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+    
+            <div class="project-card">
+                <h2>Project 2</h2>
+                <p>Description of Project 2.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+    
+            <div class="project-card">
+                <h2>Project 3</h2>
+                <p>Description of Project 3.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+            <!-- Repeat the above card structure for additional projects -->
+        </div>
+    </section>
+    
+    
+
+<!--contact-->
+    <section class="Contact" id="contact">
+        <h1 class="center-text"><u>Contact</u></h1>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone:</label></td>
+                        <td><input type="tel" id="phone" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea id="message" name="message" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+            <p class="hide-text" id="submittedMessage" style="display:none">Form Submitted!</p>
+        </div>
+
+    </section>
+
+    
+
+
+<!--Java script-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.querySelector('.contact-form form');
+            var portfolioNavbar = document.querySelector('.portfolio-navbar');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            
+            
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); 
+                alert('Your message has been submitted!');
+                
+        
+                form.reset();
+            });
+
+            mobileMenuToggle.addEventListener('click', function () {
+                mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+                portfolioNavbar.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+
+
+
+    
+
+
+
+
+
+    <footer class="center-text">
+        
+        <div style="margin: 10px">
+            <a href="github.com/ShamsurRahmanShishir"><img src="github.png" style="width: 20px;"> </a>
+            <a href="linkedin.com/in/shamsur-shishir/"><img src="linkedin.png" style="width: 20px; height: auto;"> </a>
+        </div>
+        
+        ©️All Rights Reserved by Shamsur Rahman 
+
+
+    </footer>
+    
+    
+</body>
+
+</html>
